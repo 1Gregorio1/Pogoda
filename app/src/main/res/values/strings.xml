@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pogoda</string>
+    <string name="no_text">Введи назавание города</string>
+</resources>
