@@ -34,8 +34,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/pogoda"
-        android:layout_marginHorizontal="50sp"
-        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="90sp"
+        android:layout_marginTop="33dp"
         android:text="Узнать" />
 
     <TextView
@@ -45,9 +45,9 @@
         android:layout_below="@+id/button_main"
         android:layout_marginHorizontal="50sp"
         android:layout_marginTop="99dp"
-        android:ems="10"
-        android:textSize="40sp"
+        android:ems="7"
         android:inputType="textPersonName"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
 </RelativeLayout>

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText pogoda;
     private Button button_main;
     private TextView result;
-
+    private EditText con;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
                     String city = pogoda.getText().toString();
                     String key = "e7b4cbc1bb3f56d422bf53c93ef78ae4";
                     String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key + "&units=metric&lang=ru";
-
                     new GetURL().execute(url);
                 }
 
@@ -108,8 +107,10 @@ public class MainActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
-
+           // String url1 = "https://api.openweathermap.org/data/2.5/onecall?lat=" + result.setText(obj.getJSONObject("coord").getDouble("lat")) + "&" + result.setText(obj.getJSONObject("coord").getDouble("lon")) + "&appid=e7b4cbc1bb3f56d422bf53c93ef78ae4";
+           // new GetURL().execute(url1);
         }
+
+
     }
 }
